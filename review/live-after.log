@@ -1,0 +1,13 @@
+
+> @getpaseo/app@0.15.2 test
+> vitest run src/types/stream.test.ts --bail=1
+
+
+ RUN  v4.1.7 <checkout>/packages/app
+
+
+ Test Files  1 passed (1)
+      Tests  75 passed (75)
+   Start at  13:23:53
+   Duration  223ms (transform 100ms, setup 22ms, import 118ms, tests 9ms, environment 0ms)
+

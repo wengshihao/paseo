@@ -1,5 +1,7 @@
 # Forked chat history QA
 
+**Latest: [review follow-up and regression evidence](review/README.md).** The evidence below records the initial submission.
+
 Source commit: `5d71206b7219c60bc6027d29912a3a52223969ca`. Base: `5abfdf7107b5dabb885964de97dde8b55050613d`.
 
 Evidence for `wengshihao/paseo:feat/chat-history-preview`, targeting getpaseo/paseo issue #8323. Captured on macOS with the actual Expo web app and an isolated Paseo daemon using the repository's mock provider. This branch contains QA artifacts only; none of these assets are added to the source PR.

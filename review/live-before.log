@@ -1,0 +1,44 @@
+
+> @getpaseo/app@0.15.2 test
+> vitest run src/types/stream.test.ts --bail=1
+
+
+ RUN  v4.1.7 <checkout>/packages/app
+
+ ❯ |unit| src/types/stream.test.ts (75 tests | 1 failed) 7ms
+     × delivers fork history to a live viewer ('tail', '') 4ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  |unit| src/types/stream.test.ts > user message identity > delivers fork history to a live viewer ('tail', '')
+AssertionError: expected [] to have a length of 1 but got +0
+
+- Expected
++ Received
+
+- 1
++ 0
+
+ ❯ src/types/stream.test.ts:203:27
+    201|       tail: [], head: [], event, timestamp: new Date(0), unmatchedUser…
+    202|     });
+    203|     expect(first[insert]).toHaveLength(1);
+       |                           ^
+    204|     expect(first[insert][0]).toMatchObject({ kind: "user_message", tex…
+    205|     const repeated = applyStreamEvent({
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 5 passed (75)
+   Start at  13:18:42
+   Duration  198ms (transform 88ms, setup 19ms, import 102ms, tests 7ms, environment 0ms)
+
+npm error Lifecycle script `test` failed with error:
+npm error code 1
+npm error path <checkout>/packages/app
+npm error workspace @getpaseo/app@0.15.2
+npm error location <checkout>/packages/app
+npm error command failed
+npm error command sh -c vitest run src/types/stream.test.ts --bail=1

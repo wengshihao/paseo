@@ -1,0 +1,142 @@
+[metro] Skipping web setup: EXPO_NO_WEB_SETUP is enabled.
+[metro] Using src/app as the root directory for Expo Router.
+[metro] Waiting on http://localhost:61662
+[metro] Logs for your project will appear below.
+[metro] | (node:54647) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[metro] | (Use `node --trace-warnings ...` to show where the warning was created)
+[metro] Web Bundled 1812ms packages/app/index.ts (5812 modules)
+[e2e] Metro warmed on port 61662
+
+Running 3 tests using 1 worker
+
+(node:55266) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:55266) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[e2e] Worker 0 daemon started on port 61700, home: /var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/paseo-e2e-worker-0-u8VVrf
+[e2e] Worker 0 daemon stopped
+  ✘  1 [electron] › .tmp/fork-history-desktop/smoke.spec.ts:63:3 › Assistant fork menu › reads fork history before and after sending and opens its source after reload (35.6s)
+(node:55402) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:55402) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[e2e] Worker 1 daemon started on port 61872, home: /var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/paseo-e2e-worker-1-wvMjDl
+[e2e] Worker 1 daemon stopped
+  ✘  2 [electron] › .tmp/fork-history-desktop/smoke.spec.ts:139:5 › Assistant fork menu › retains inherited context when rewinding the first fork prompt (history only) (31.7s)
+(node:55546) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:55546) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[e2e] Worker 2 daemon started on port 61997, home: /var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/paseo-e2e-worker-2-4o23TC
+[metro] Web Bundled 109ms packages/app/index.ts (1 module)
+[metro] Web  LOG  Running application "main" with appParams:
+[metro]  {"hydrate": undefined, "rootTag": "#root"} 
+[metro] Development-level warnings: ON.
+[metro] Performance optimizations: OFF.
+[metro] Web  WARN  Require cycle: src/runtime/host-runtime.ts -> src/desktop/browser/automation/handler.ts -> src/stores/workspace-layout-store.ts -> src/plugins/workspace-panels/locations.ts -> src/plugins/registry.ts -> src/plugins/client-runtime.ts -> src/runtime/host-runtime.ts
+[metro] Require cycles are allowed, but can result in uninitialized values. Consider refactoring to remove the need for a cycle.
+[metro] Web  WARN  Require cycle: src/plugins/workspace-panels/locations.ts -> src/plugins/registry.ts -> src/plugins/client-runtime.ts -> src/plugins/actions.ts -> src/plugins/workspace-panels/locations.ts
+[metro] Require cycles are allowed, but can result in uninitialized values. Consider refactoring to remove the need for a cycle.
+[metro] Web  WARN  Require cycle: src/stores/workspace-layout-store.ts -> src/plugins/workspace-panels/locations.ts -> src/plugins/registry.ts -> src/plugins/client-runtime.ts -> src/plugins/navigation.ts -> src/stores/navigation-active-workspace-store/index.ts -> src/workspace-tabs/navigation.ts -> src/stores/workspace-layout-store.ts
+[metro] Require cycles are allowed, but can result in uninitialized values. Consider refactoring to remove the need for a cycle.
+[metro] Web  WARN  Require cycle: src/stores/workspace-layout-store.ts -> src/plugins/workspace-panels/locations.ts -> src/plugins/registry.ts -> src/plugins/client-runtime.ts -> src/plugins/navigation.ts -> src/stores/navigation-active-workspace-store/index.ts -> src/stores/workspace-layout-store.ts
+[metro] Require cycles are allowed, but can result in uninitialized values. Consider refactoring to remove the need for a cycle.
+[metro] Web  WARN  Require cycle: src/stores/workspace-layout-store.ts -> src/plugins/workspace-panels/locations.ts -> src/plugins/registry.ts -> src/plugins/client-runtime.ts -> src/plugins/navigation.ts -> src/stores/workspace-layout-store.ts
+[metro] Require cycles are allowed, but can result in uninitialized values. Consider refactoring to remove the need for a cycle.
+[metro] Web  WARN  Require cycle: src/runtime/host-runtime.ts -> src/desktop/browser/automation/handler.ts -> src/stores/workspace-layout-store.ts -> src/plugins/workspace-panels/locations.ts -> src/plugins/registry.ts -> src/plugins/evaluate.ts -> src/plugins/react-native/ui.ts -> src/plugins/react-native/markdown.tsx -> src/components/markdown/renderer.tsx -> src/agent-commands/index.tsx -> src/agent-commands/use-query.ts -> src/runtime/host-runtime.ts
+[metro] Require cycles are allowed, but can result in uninitialized values. Consider refactoring to remove the need for a cycle.
+[metro] Web  WARN  Require cycle: src/plugins/registry.ts -> src/plugins/evaluate.ts -> src/plugins/themes/index.ts -> src/plugins/registry.ts
+[metro] Require cycles are allowed, but can result in uninitialized values. Consider refactoring to remove the need for a cycle.
+[metro] Web  WARN  Require cycle: src/runtime/host-runtime.ts -> src/runtime/directory-sync/index.ts -> src/runtime/directory-sync/agent-replica.ts -> src/hooks/use-archive-agent.ts -> src/runtime/host-runtime.ts
+[metro] Require cycles are allowed, but can result in uninitialized values. Consider refactoring to remove the need for a cycle.
+[metro] Web  WARN  Require cycle: src/components/sidebar-workspace-list.tsx -> src/components/sidebar/sidebar-status-list.tsx -> src/components/sidebar/sidebar-workspace-row-content.tsx -> src/components/workspace-hover-card.tsx -> src/components/sidebar-workspace-list.tsx
+[metro] Require cycles are allowed, but can result in uninitialized values. Consider refactoring to remove the need for a cycle.
+[metro] Web  WARN  props.pointerEvents is deprecated. Use style.pointerEvents
+[metro] Web Bundled 49ms packages/app/src/desktop/attachments/desktop-attachment-store.ts (1 module)
+[metro] Web Bundled 27ms packages/app/src/desktop/attachments/desktop-attachment-bridge.ts (1 module)
+[e2e] Worker 2 daemon stopped
+  ✘  3 [electron] › .tmp/fork-history-desktop/smoke.spec.ts:139:5 › Assistant fork menu › retains inherited context when rewinding the first fork prompt (Continue the fork) (8.1s)
+[e2e] Metro stopped
+
+
+  1) [electron] › .tmp/fork-history-desktop/smoke.spec.ts:63:3 › Assistant fork menu › reads fork history before and after sending and opens its source after reload 
+
+    TimeoutError: electronApplication.firstWindow: Timeout 30000ms exceeded while waiting for event "window"
+
+       at fixtures.ts:17
+
+      15 |       recordVideo:{dir:testInfo.outputPath("video")}, timeout:30000});
+      16 |     try {
+    > 17 |       const page = await app.firstWindow();
+         |                              ^
+      18 |       await page.setViewportSize({width:1280,height:720});
+      19 |       await use(page);
+      20 |     } finally { await app.close(); await rm(profile,{recursive:true,force:true}); }
+        at Object.page (<checkout>/.tmp/fork-history-desktop/fixtures.ts:17:30)
+
+    attachment #1: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../per-message-desktop-results/smoke-Assistant-fork-menu--767c0-ens-its-source-after-reload-electron/trace.zip
+    Usage:
+
+        npx playwright show-trace ../per-message-desktop-results/smoke-Assistant-fork-menu--767c0-ens-its-source-after-reload-electron/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [electron] › .tmp/fork-history-desktop/smoke.spec.ts:139:5 › Assistant fork menu › retains inherited context when rewinding the first fork prompt (history only) 
+
+    TimeoutError: electronApplication.firstWindow: Timeout 30000ms exceeded while waiting for event "window"
+
+       at fixtures.ts:17
+
+      15 |       recordVideo:{dir:testInfo.outputPath("video")}, timeout:30000});
+      16 |     try {
+    > 17 |       const page = await app.firstWindow();
+         |                              ^
+      18 |       await page.setViewportSize({width:1280,height:720});
+      19 |       await use(page);
+      20 |     } finally { await app.close(); await rm(profile,{recursive:true,force:true}); }
+        at Object.page (<checkout>/.tmp/fork-history-desktop/fixtures.ts:17:30)
+
+    attachment #1: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../per-message-desktop-results/smoke-Assistant-fork-menu--48527-t-fork-prompt-history-only--electron/trace.zip
+    Usage:
+
+        npx playwright show-trace ../per-message-desktop-results/smoke-Assistant-fork-menu--48527-t-fork-prompt-history-only--electron/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) [electron] › .tmp/fork-history-desktop/smoke.spec.ts:139:5 › Assistant fork menu › retains inherited context when rewinding the first fork prompt (Continue the fork) 
+
+    Error: page.goto: Protocol error (Page.navigate): Cannot navigate to invalid URL
+    Call log:
+      - navigating to "/h/srv_e2e_worker_2/workspace/wks_b124c5086a199811?open=agent%3A44ad8a51-cedb-4adc-beac-1fcc6de5f15d", waiting until "commit"
+
+
+       at ../../packages/app/e2e/support/helpers/mock-agent.ts:94
+
+      92 |   input: { workspaceId: string; agentId: string },
+      93 | ): Promise<void> {
+    > 94 |   await page.goto(buildAgentRoute(input.workspaceId, input.agentId), { waitUntil: "commit" });
+         |              ^
+      95 |   await page.waitForURL(
+      96 |     (url) => url.pathname.includes("/workspace/") && !url.searchParams.has("open"),
+      97 |     { timeout: 60_000, waitUntil: "commit" },
+        at openAgentRoute (<checkout>/packages/app/e2e/support/helpers/mock-agent.ts:94:14)
+        at <checkout>/.tmp/fork-history-desktop/smoke.spec.ts:150:27
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../per-message-desktop-results/smoke-Assistant-fork-menu--559b7-k-prompt-Continue-the-fork--electron/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../per-message-desktop-results/smoke-Assistant-fork-menu--559b7-k-prompt-Continue-the-fork--electron/trace.zip
+    Usage:
+
+        npx playwright show-trace ../per-message-desktop-results/smoke-Assistant-fork-menu--559b7-k-prompt-Continue-the-fork--electron/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3 failed
+    [electron] › .tmp/fork-history-desktop/smoke.spec.ts:63:3 › Assistant fork menu › reads fork history before and after sending and opens its source after reload 
+    [electron] › .tmp/fork-history-desktop/smoke.spec.ts:139:5 › Assistant fork menu › retains inherited context when rewinding the first fork prompt (history only) 
+    [electron] › .tmp/fork-history-desktop/smoke.spec.ts:139:5 › Assistant fork menu › retains inherited context when rewinding the first fork prompt (Continue the fork) 

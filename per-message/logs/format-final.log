@@ -1,0 +1,5 @@
+
+> paseo@0.15.2 format:files
+> oxfmt packages/server/src/server/agent/agent-manager.ts packages/server/src/server/agent/agent-manager.test.ts packages/server/src/server/agent/agent-storage.ts packages/server/src/server/agent/agent-projections.ts packages/server/src/server/agent/fork-context.ts packages/server/src/server/agent/providers/codex-app-server-agent.real.e2e.test.ts
+
+Finished in 36ms on 6 files using 18 threads.

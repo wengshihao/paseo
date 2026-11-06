@@ -1,0 +1,208 @@
+[metro] Skipping web setup: EXPO_NO_WEB_SETUP is enabled.
+[metro] Using src/app as the root directory for Expo Router.
+[metro] Waiting on http://localhost:63051
+[metro] Logs for your project will appear below.
+[metro] Web Bundled 1477ms packages/app/index.ts (5812 modules)
+[e2e] Metro warmed on port 63051
+
+Running 3 tests using 1 worker
+
+(node:59861) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:59861) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[e2e] Worker 0 daemon started on port 63073, home: /var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/paseo-e2e-worker-0-OfU9Oj
+Electron startup {
+  ready: true,
+  windows: 0,
+  argv: [
+    '<checkout>/node_modules/electron/dist/Electron.app/Contents/MacOS/Electron',
+    '<checkout>/packages/desktop'
+  ]
+}
+[DevTools] Failed to load React DevTools: Error: ENOENT: no such file or directory, open '<checkout>/.tmp/fork-electron-profile-CbKz7K/extensions/fmkadmapgofadopljbjfkapdkoienihi/manifest.json'
+    at async open (node:internal/fs/promises:1345:25)
+    at async readFile (node:internal/fs/promises:1996:14)
+    at async patchReactDevToolsForElectron (<checkout>/packages/desktop/dist/features/react-devtools.js:40:33)
+    at async loadReactDevTools (<checkout>/packages/desktop/dist/features/react-devtools.js:74:9)
+    at async createWindow (<checkout>/packages/desktop/dist/main.js:630:9)
+    at async Object.create (<checkout>/packages/desktop/dist/main.js:654:21)
+    at async open (<checkout>/packages/desktop/dist/window/desktop-window-owner.js:9:9)
+    at async Object.bootstrap [as bootstrapGui] (<checkout>/packages/desktop/dist/main.js:809:5)
+    at async runDesktopStartup (<checkout>/packages/desktop/dist/desktop-startup.js:9:5) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '<checkout>/.tmp/fork-electron-profile-CbKz7K/extensions/fmkadmapgofadopljbjfkapdkoienihi/manifest.json'
+}
+[metro] Web Bundled 99ms packages/app/index.ts (1 module)
+Error: ERR_ABORTED (-3) loading 'http://localhost:63051/h/srv_e2e_worker_0/workspace/wks_dd3f666a3486d3b6?open=agent%3A1f04d1f7-fe10-4d38-b3e4-09be6e8292f7'
+    at rejectAndCleanup (node:electron/js2c/browser_init:2:99780)
+    at WebContents.navigationListener (node:electron/js2c/browser_init:2:100060)
+    at WebContents.emit (node:events:526:24)
+Waiting for the debugger to disconnect...
+[e2e] Worker 0 daemon stopped
+  ✘  1 [electron] › .tmp/fork-history-desktop/smoke.spec.ts:63:3 › Assistant fork menu › reads fork history before and after sending and opens its source after reload (1.6s)
+(node:60446) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:60446) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[e2e] Worker 1 daemon started on port 63099, home: /var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/paseo-e2e-worker-1-91iH1R
+Electron startup {
+  ready: true,
+  windows: 0,
+  argv: [
+    '<checkout>/node_modules/electron/dist/Electron.app/Contents/MacOS/Electron',
+    '<checkout>/packages/desktop'
+  ]
+}
+[DevTools] Failed to load React DevTools: Error: ENOENT: no such file or directory, open '<checkout>/.tmp/fork-electron-profile-qcN45g/extensions/fmkadmapgofadopljbjfkapdkoienihi/manifest.json'
+    at async open (node:internal/fs/promises:1345:25)
+    at async readFile (node:internal/fs/promises:1996:14)
+    at async patchReactDevToolsForElectron (<checkout>/packages/desktop/dist/features/react-devtools.js:40:33)
+    at async loadReactDevTools (<checkout>/packages/desktop/dist/features/react-devtools.js:74:9)
+    at async createWindow (<checkout>/packages/desktop/dist/main.js:630:9)
+    at async Object.create (<checkout>/packages/desktop/dist/main.js:654:21)
+    at async open (<checkout>/packages/desktop/dist/window/desktop-window-owner.js:9:9)
+    at async Object.bootstrap [as bootstrapGui] (<checkout>/packages/desktop/dist/main.js:809:5)
+    at async runDesktopStartup (<checkout>/packages/desktop/dist/desktop-startup.js:9:5) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '<checkout>/.tmp/fork-electron-profile-qcN45g/extensions/fmkadmapgofadopljbjfkapdkoienihi/manifest.json'
+}
+[metro] Web Bundled 105ms packages/app/index.ts (1 module)
+Error: ERR_ABORTED (-3) loading 'http://localhost:63051/h/srv_e2e_worker_1/workspace/wks_16f9100bc0a9f8e1?open=agent%3Ae2c72ffa-4856-4ca8-9670-7b9474f857da'
+    at rejectAndCleanup (node:electron/js2c/browser_init:2:99780)
+    at WebContents.navigationListener (node:electron/js2c/browser_init:2:100060)
+    at WebContents.emit (node:events:526:24)
+Waiting for the debugger to disconnect...
+[e2e] Worker 1 daemon stopped
+  ✘  2 [electron] › .tmp/fork-history-desktop/smoke.spec.ts:139:5 › Assistant fork menu › retains inherited context when rewinding the first fork prompt (history only) (1.5s)
+(node:61351) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:61351) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[e2e] Worker 2 daemon started on port 63149, home: /var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/paseo-e2e-worker-2-ZRe5t3
+Electron startup {
+  ready: true,
+  windows: 0,
+  argv: [
+    '<checkout>/node_modules/electron/dist/Electron.app/Contents/MacOS/Electron',
+    '<checkout>/packages/desktop'
+  ]
+}
+[DevTools] Failed to load React DevTools: Error: ENOENT: no such file or directory, open '<checkout>/.tmp/fork-electron-profile-VWFZ3y/extensions/fmkadmapgofadopljbjfkapdkoienihi/manifest.json'
+    at async open (node:internal/fs/promises:1345:25)
+    at async readFile (node:internal/fs/promises:1996:14)
+    at async patchReactDevToolsForElectron (<checkout>/packages/desktop/dist/features/react-devtools.js:40:33)
+    at async loadReactDevTools (<checkout>/packages/desktop/dist/features/react-devtools.js:74:9)
+    at async createWindow (<checkout>/packages/desktop/dist/main.js:630:9)
+    at async Object.create (<checkout>/packages/desktop/dist/main.js:654:21)
+    at async open (<checkout>/packages/desktop/dist/window/desktop-window-owner.js:9:9)
+    at async Object.bootstrap [as bootstrapGui] (<checkout>/packages/desktop/dist/main.js:809:5)
+    at async runDesktopStartup (<checkout>/packages/desktop/dist/desktop-startup.js:9:5) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '<checkout>/.tmp/fork-electron-profile-VWFZ3y/extensions/fmkadmapgofadopljbjfkapdkoienihi/manifest.json'
+}
+[metro] Web Bundled 125ms packages/app/index.ts (1 module)
+Error: ERR_ABORTED (-3) loading 'http://localhost:63051/h/srv_e2e_worker_2/workspace/wks_312420ee78040650?open=agent%3A4536a7cd-0082-4400-b12b-417eac449a45'
+    at rejectAndCleanup (node:electron/js2c/browser_init:2:99780)
+    at WebContents.navigationListener (node:electron/js2c/browser_init:2:100060)
+    at WebContents.emit (node:events:526:24)
+Waiting for the debugger to disconnect...
+[e2e] Worker 2 daemon stopped
+  ✘  3 [electron] › .tmp/fork-history-desktop/smoke.spec.ts:139:5 › Assistant fork menu › retains inherited context when rewinding the first fork prompt (Continue the fork) (1.9s)
+[e2e] Metro stopped
+
+
+  1) [electron] › .tmp/fork-history-desktop/smoke.spec.ts:63:3 › Assistant fork menu › reads fork history before and after sending and opens its source after reload 
+
+    Error: page.goto: net::ERR_ABORTED; maybe frame was detached?
+    Call log:
+      - navigating to "http://localhost:63051/h/srv_e2e_worker_0/workspace/wks_dd3f666a3486d3b6?open=agent%3A1f04d1f7-fe10-4d38-b3e4-09be6e8292f7", waiting until "commit"
+
+
+       at fixtures.ts:24
+
+      22 |       const page = await app.firstWindow();
+      23 |       const goto = page.goto.bind(page);
+    > 24 |       page.goto = (url, options) => goto(new URL(url, baseURL).toString(), options);
+         |                                     ^
+      25 |       await page.setViewportSize({width:1280,height:720});
+      26 |       await use(page);
+      27 |     } finally { await app.close(); await rm(profile,{recursive:true,force:true}); }
+        at Page.goto (<checkout>/.tmp/fork-history-desktop/fixtures.ts:24:37)
+        at openAgentRoute (<checkout>/packages/app/e2e/support/helpers/mock-agent.ts:94:14)
+        at <checkout>/.tmp/fork-history-desktop/smoke.spec.ts:78:25
+
+    attachment #1: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../per-message-desktop-results/smoke-Assistant-fork-menu--767c0-ens-its-source-after-reload-electron/trace.zip
+    Usage:
+
+        npx playwright show-trace ../per-message-desktop-results/smoke-Assistant-fork-menu--767c0-ens-its-source-after-reload-electron/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [electron] › .tmp/fork-history-desktop/smoke.spec.ts:139:5 › Assistant fork menu › retains inherited context when rewinding the first fork prompt (history only) 
+
+    Error: page.goto: net::ERR_ABORTED; maybe frame was detached?
+    Call log:
+      - navigating to "http://localhost:63051/h/srv_e2e_worker_1/workspace/wks_16f9100bc0a9f8e1?open=agent%3Ae2c72ffa-4856-4ca8-9670-7b9474f857da", waiting until "commit"
+
+
+       at fixtures.ts:24
+
+      22 |       const page = await app.firstWindow();
+      23 |       const goto = page.goto.bind(page);
+    > 24 |       page.goto = (url, options) => goto(new URL(url, baseURL).toString(), options);
+         |                                     ^
+      25 |       await page.setViewportSize({width:1280,height:720});
+      26 |       await use(page);
+      27 |     } finally { await app.close(); await rm(profile,{recursive:true,force:true}); }
+        at Page.goto (<checkout>/.tmp/fork-history-desktop/fixtures.ts:24:37)
+        at openAgentRoute (<checkout>/packages/app/e2e/support/helpers/mock-agent.ts:94:14)
+        at <checkout>/.tmp/fork-history-desktop/smoke.spec.ts:150:27
+
+    attachment #1: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../per-message-desktop-results/smoke-Assistant-fork-menu--48527-t-fork-prompt-history-only--electron/trace.zip
+    Usage:
+
+        npx playwright show-trace ../per-message-desktop-results/smoke-Assistant-fork-menu--48527-t-fork-prompt-history-only--electron/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) [electron] › .tmp/fork-history-desktop/smoke.spec.ts:139:5 › Assistant fork menu › retains inherited context when rewinding the first fork prompt (Continue the fork) 
+
+    Error: page.goto: net::ERR_ABORTED; maybe frame was detached?
+    Call log:
+      - navigating to "http://localhost:63051/h/srv_e2e_worker_2/workspace/wks_312420ee78040650?open=agent%3A4536a7cd-0082-4400-b12b-417eac449a45", waiting until "commit"
+
+
+       at fixtures.ts:24
+
+      22 |       const page = await app.firstWindow();
+      23 |       const goto = page.goto.bind(page);
+    > 24 |       page.goto = (url, options) => goto(new URL(url, baseURL).toString(), options);
+         |                                     ^
+      25 |       await page.setViewportSize({width:1280,height:720});
+      26 |       await use(page);
+      27 |     } finally { await app.close(); await rm(profile,{recursive:true,force:true}); }
+        at Page.goto (<checkout>/.tmp/fork-history-desktop/fixtures.ts:24:37)
+        at openAgentRoute (<checkout>/packages/app/e2e/support/helpers/mock-agent.ts:94:14)
+        at <checkout>/.tmp/fork-history-desktop/smoke.spec.ts:150:27
+
+    attachment #1: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../per-message-desktop-results/smoke-Assistant-fork-menu--559b7-k-prompt-Continue-the-fork--electron/trace.zip
+    Usage:
+
+        npx playwright show-trace ../per-message-desktop-results/smoke-Assistant-fork-menu--559b7-k-prompt-Continue-the-fork--electron/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3 failed
+    [electron] › .tmp/fork-history-desktop/smoke.spec.ts:63:3 › Assistant fork menu › reads fork history before and after sending and opens its source after reload 
+    [electron] › .tmp/fork-history-desktop/smoke.spec.ts:139:5 › Assistant fork menu › retains inherited context when rewinding the first fork prompt (history only) 
+    [electron] › .tmp/fork-history-desktop/smoke.spec.ts:139:5 › Assistant fork menu › retains inherited context when rewinding the first fork prompt (Continue the fork) 

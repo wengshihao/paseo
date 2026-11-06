@@ -1,0 +1,70 @@
+
+> @getpaseo/server@0.15.2 test:unit
+> vitest run --fileParallelism --exclude "**/*.e2e.test.ts" src/server/agent/agent-manager.test.ts -t preserves every fork snapshot --bail=1
+
+
+ RUN  v4.1.6 <checkout>/packages/server
+
+stdout | src/server/agent/agent-manager.test.ts
+[dotenv@17.3.1] injecting env (0) from .env.test -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+[dotenv@17.3.1] injecting env (0) from ../.env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+
+ ❯ src/server/agent/agent-manager.test.ts (246 tests | 1 failed | 240 skipped) 66ms
+   × preserves every fork snapshot across forced replay and restart ('missing' IDs, same text: true) 16ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/server/agent/agent-manager.test.ts > preserves every fork snapshot across forced replay and restart ('missing' IDs, same text: true)
+AssertionError: expected [ Array(2) ] to deeply equal [ ObjectContaining{…}, …(1) ]
+
+- Expected
++ Received
+
+@@ -23,19 +23,19 @@
+    },
+    {
+      "chatHistory": {
+        "chatHistoryEntries": [
+          {
+-           "id": "second-entry",
++           "id": "first-entry",
+            "role": "user",
+            "text": "same original question",
+          },
+        ],
+        "chatHistorySource": {
+-         "agentId": "second-source",
+-         "serverId": "second-host",
+-         "title": "second",
++         "agentId": "first-source",
++         "serverId": "first-host",
++         "title": "first",
+        },
+        "contextKind": "chat_history",
+        "mimeType": "text/plain",
+        "text": "[User] same original question",
+        "type": "text",
+
+ ❯ src/server/agent/agent-manager.test.ts:888:78
+    886|     const expected = attachments.map((attachment) => expect.objectCont…
+    887|     await manager.hydrateTimelineFromProvider(agent.id, { force: true …
+    888|     expect((await manager.getTimelineRows(agent.id)).map((row) => row.…
+       |                                                                              ^
+    889|     await manager.closeAgent(agent.id);
+    890|     await manager.flush();
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 5 passed | 240 skipped (246)
+   Start at  16:56:13
+   Duration  751ms (transform 425ms, setup 16ms, import 606ms, tests 66ms, environment 0ms)
+
+npm error Lifecycle script `test:unit` failed with error:
+npm error code 1
+npm error path <checkout>/packages/server
+npm error workspace @getpaseo/server@0.15.2
+npm error location <checkout>/packages/server
+npm error command failed
+npm error command sh -c vitest run --fileParallelism --exclude "**/*.e2e.test.ts" src/server/agent/agent-manager.test.ts -t 'preserves every fork snapshot' --bail=1

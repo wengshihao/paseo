@@ -1,0 +1,270 @@
+
+> @getpaseo/server@0.15.2 test
+> npm run test:unit && npm run test:integration src/server/agent/agent-manager.test.ts -t preserves every fork snapshot --bail=1
+
+
+> @getpaseo/server@0.15.2 test:unit
+> vitest run --fileParallelism --exclude "**/*.e2e.test.ts"
+
+
+ RUN  v4.1.6 <checkout>/packages/server
+
+To /private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/checkout-git-test-BCNC9j/remote.git
+ * [new branch]      main -> main
+Cloning into '/private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/checkout-git-test-BCNC9j/upstream-clone'...
+done.
+To /private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/checkout-git-test-mbg5Mo/remote.git
+ * [new branch]      main -> main
+Cloning into '/private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/checkout-git-test-mbg5Mo/upstream-clone'...
+done.
+stdout | src/services/github-service.test.ts
+[dotenv@17.3.1] injecting env (0) from .env.test -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+[dotenv@17.3.1] injecting env (0) from ../.env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+
+ ❯ src/services/github-service.test.ts (115 tests | 10 failed) 2609ms
+     × merges pull requests with gh using merge 51ms
+     × merges pull requests with gh using squash 9ms
+     × merges pull requests with gh using rebase 6ms
+     × enables auto-merge with gh using merge 6ms
+     × enables auto-merge with gh using squash 6ms
+     × enables auto-merge with gh using rebase 4ms
+     × disables auto-merge with gh 4ms
+     × resolves the repo slug from the workspace when creating a pull request 7ms
+     × routes gh calls to the resolved GitHub Enterprise host via GH_HOST 7ms
+     × throws when the workspace repository cannot be resolved for pull request creation 13ms
+stdout | src/server/agent/providers/claude/agent.test.ts
+[dotenv@17.3.1] injecting env (0) from .env.test -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+[dotenv@17.3.1] injecting env (0) from ../.env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2
+
+ ❯ src/server/agent/providers/claude/agent.test.ts (119 tests | 1 failed) 2774ms
+     × resolves the installed Claude Code version 15ms
+Switched to a new branch 'feature/rebase-test'
+Switched to branch 'main'
+Switched to branch 'feature/rebase-test'
+Switched to a new branch 'feature/old-name'
+fatal: 'refs/heads/feature/old-name' - not a valid ref
+Switched to a new branch 'feature/old-name'
+Switched to a new branch 'feature/existing'
+Switched to branch 'main'
+Switched to a new branch 'feature/rename'
+Switched to a new branch 'feature/existing'
+workspace reconciliation main-thread work: {"blockingMs":2.09,"filesystemRequests":20001,"yields":1283,"longestCallbackMs":2.2244590000000244,"longestCallbackCpuMs":2.09,"longestGcMs":1.157082974910736,"gcCount":34,"longestGapMs":5.894917000000078}
+Switched to a new branch 'feature/stale-default'
+Switched to branch 'master'
+To /private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/checkout-git-test-iLJHnG/remote.git
+ * [new branch]      main -> main
+Cloning into '/private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/checkout-git-test-iLJHnG/upstream-clone'...
+done.
+To /private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/checkout-git-test-P3qKb6/remote.git
+ * [new branch]      main -> main
+Cloning into '/private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/checkout-git-test-P3qKb6/upstream-clone'...
+done.
+stdout | src/server/agent/agent-manager.test.ts
+[dotenv@17.3.1] injecting env (0) from .env.test -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+[dotenv@17.3.1] injecting env (0) from ../.env -- tip: ⚙️  override existing env vars with { override: true }
+
+ ❯ src/server/agent/agent-manager.test.ts (243 tests | 3 failed) 7018ms
+   × preserves every fork snapshot across forced replay and restart (native IDs) 29ms
+   × preserves every fork snapshot across forced replay and restart (local IDs) 13ms
+   × preserves every fork snapshot across forced replay and restart (missing IDs) 11ms
+To /private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/checkout-git-test-cMb4Xr/remote.git
+ * [new branch]      main -> main
+Cloning into '/private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/checkout-git-test-cMb4Xr/upstream-clone'...
+done.
+Switched to a new branch 'feature/facts'
+Cloning into bare repository '/private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/worktree-test-OUAKSN/remote.git'...
+done.
+Cloning into '/private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/worktree-test-OUAKSN/remote-clone'...
+done.
+Switched to a new branch 'contributor/feature'
+To /private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/worktree-test-OUAKSN/remote.git
+ * [new branch]      contributor/feature -> contributor/feature
+Cloning into bare repository '/private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/worktree-test-BHjECE/remote.git'...
+done.
+Cloning into '/private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/worktree-test-BHjECE/remote-clone'...
+done.
+Switched to a new branch 'Feature.X'
+To /private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/worktree-test-BHjECE/remote.git
+ * [new branch]      Feature.X -> Feature.X
+To /private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/worktree-test-GjFxoh/remote.git
+ * [new branch]      main -> main
+Cloning into '/private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/worktree-test-GjFxoh/remote-clone'...
+done.
+Reset branch 'main'
+To /private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/worktree-test-GjFxoh/remote.git
+   2c5ca0a..c3d07e2  main -> main
+From /private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/worktree-test-GjFxoh/remote
+   2c5ca0a..c3d07e2  main       -> origin/main
+To /private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/checkout-git-test-Vfjr4V/remote.git
+ * [new branch]      main -> main
+Cloning into '/private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/checkout-git-test-Vfjr4V/clone'...
+done.
+To /private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/checkout-git-test-Vfjr4V/remote.git
+   3128495..c290525  main -> main
+From /private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/checkout-git-test-Vfjr4V/remote
+   3128495..c290525  main       -> origin/main
+To /private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/checkout-git-test-Vfjr4V/remote.git
+   c290525..eb4e728  main -> main
+To /private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/worktree-test-ubWQkM/fork.git
+ * [new branch]      main -> main
+From /private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/checkout-git-test-Vfjr4V/remote
+   c290525..eb4e728  main       -> origin/main
+Cloning into '/private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/worktree-test-ubWQkM/fork-clone'...
+done.
+To /private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/worktree-test-ubWQkM/fork.git
+   c43c499..bd3d6c6  main -> main
+From /private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/worktree-test-ubWQkM/fork
+   c43c499..bd3d6c6  main       -> upstream/main
+To /private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/checkout-git-test-PY2LIp/remote.git
+ * [new branch]      main -> main
+Cloning into '/private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/checkout-git-test-PY2LIp/upstream-clone'...
+done.
+To /private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/checkout-git-test-PY2LIp/fork.git
+ * [new branch]      main -> main
+To /private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/checkout-git-test-8RUxLL/remote.git
+ * [new branch]      main -> main
+To /private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/worktree-test-ubWQkM/fork.git
+   bd3d6c6..262d8de  main -> main
+Cloning into '/private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/checkout-git-test-8RUxLL/upstream-clone'...
+done.
+Switched to a new branch 'feature'
+From /private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/worktree-test-ubWQkM/fork
+   bd3d6c6..262d8de  main       -> upstream/main
+To /private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/checkout-git-test-8RUxLL/remote.git
+ * [new branch]      HEAD -> other-name
+To /private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/checkout-git-test-7qlQ7M/fork.git
+ * [new branch]      main -> main
+To /private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/worktree-test-jseCoQ/upstream.git
+ * [new branch]      main -> release+hotfix
+To /private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/checkout-git-test-4PEVqX/remote.git
+ * [new branch]      main -> main
+Cloning into '/private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/checkout-git-test-4PEVqX/upstream-clone'...
+done.
+To /private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/checkout-git-test-j0lc9D/remote.git
+ * [new branch]      main -> main
+Cloning into '/private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/checkout-git-test-j0lc9D/upstream-clone'...
+done.
+Switched to a new branch 'local-only'
+To /private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/checkout-git-test-ow7raP/remote.git
+ * [new branch]      main -> main
+Cloning into '/private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/checkout-git-test-ow7raP/upstream-clone'...
+done.
+Switched to a new branch 'aaronzhongg/open-button-targets-active-file'
+To /private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/checkout-git-test-ow7raP/pr-remote.git
+ * [new branch]      HEAD -> open-button-targets-active-file
+To /private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/checkout-git-test-VysTwg/remote.git
+ * [new branch]      main -> main
+Cloning into '/private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/checkout-git-test-VysTwg/upstream-clone'...
+done.
+Switched to a new branch 'aaronzhongg/open-button-targets-active-file'
+To /private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/checkout-git-test-VysTwg/pr-remote.git
+ * [new branch]      HEAD -> open-button-targets-active-file
+Cloning into '/private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/checkout-git-test-VysTwg/pr-clone'...
+done.
+warning: remote HEAD refers to nonexistent ref, unable to checkout
+Switched to a new branch 'open-button-targets-active-file'
+To /private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/checkout-git-test-VysTwg/pr-remote.git
+   7296b3a..0464146  open-button-targets-active-file -> open-button-targets-active-file
+From /private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/checkout-git-test-VysTwg/pr-remote
+   7296b3a..0464146  open-button-targets-active-file -> paseo-pr-1285/open-button-targets-active-file
+To /private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/checkout-git-test-Ns8Fg2/remote.git
+ * [new branch]      main -> main
+Cloning into '/private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/checkout-git-test-Ns8Fg2/upstream-clone'...
+done.
+Switched to a new branch 'feature'
+To /private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/checkout-git-test-Ns8Fg2/remote.git
+ * [new branch]      feature -> feature
+To /private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/checkout-git-test-Ns8Fg2/remote.git
+ - [deleted]         feature
+diff highlight 5MiB supplied main-thread work: {"blockingMs":0.2857920000000149,"filesystemRequests":2,"yields":0,"longestCallbackMs":0.2857920000000149,"longestCallbackCpuMs":0.288,"longestGcMs":0,"gcCount":0,"longestGapMs":1.403583000000026}
+diff highlight 5MiB local main-thread work: {"blockingMs":0.20699999999999363,"filesystemRequests":2,"yields":0,"longestCallbackMs":0.20699999999999363,"longestCallbackCpuMs":0.208,"longestGcMs":0,"gcCount":0,"longestGapMs":1.1759159999999724}
+diff highlight large JSON main-thread work: {"blockingMs":0.223,"filesystemRequests":2,"yields":0,"longestCallbackMs":0.23987499999998363,"longestCallbackCpuMs":0.223,"longestGcMs":0,"gcCount":0,"longestGapMs":1.5979589999999462}
+To /private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/checkout-git-test-HqwnT7/remote.git
+ * [new branch]      main -> main
+Cloning into '/private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/checkout-git-test-HqwnT7/upstream-clone'...
+done.
+To /private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/checkout-git-test-HqwnT7/remote.git
+   b4b07ff..a62525d  main -> main
+From /private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/checkout-git-test-md2WWK/repo
+ * [new branch]      main       -> origin/main
+Cloning into bare repository '/private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/worktree-test-CMU9BD/remote.git'...
+done.
+Cloning into '/private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/worktree-test-CMU9BD/updater'...
+done.
+To /private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/worktree-test-CMU9BD/remote.git
+   d360ddb..a152e8d  main -> main
+From /private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/worktree-test-CMU9BD/remote
+ * [new branch]      main       -> origin/main
+To /private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/checkout-git-test-DXzfI8/remote.git
+ * [new branch]      main -> main
+Cloning into '/private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/checkout-git-test-DXzfI8/upstream-clone'...
+done.
+To /private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/checkout-git-test-DXzfI8/remote.git
+   1cac49d..fdf8dbb  main -> main
+From /private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/checkout-git-test-DXzfI8/remote
+   1cac49d..fdf8dbb  main       -> origin/main
+Switched to a new branch 'symlink-config'
+Switched to branch 'main'
+To /private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/checkout-git-test-lUTdLb/remote.git
+ * [new branch]      main -> main
+Cloning into '/private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/checkout-git-test-lUTdLb/upstream-clone'...
+done.
+To /private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/checkout-git-test-lUTdLb/remote.git
+   64e377c..967d689  main -> main
+From /private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/checkout-git-test-lUTdLb/remote
+   64e377c..967d689  main       -> origin/main
+To /private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/checkout-git-test-FjuMeZ/remote.git
+ * [new branch]      main -> main
+Cloning into bare repository '/private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/worktree-explicit-test-Tra5JK/remote.git'...
+done.
+Cloning into '/private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/checkout-git-test-FjuMeZ/upstream-clone'...
+done.
+Everything up-to-date
+To /private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/worktree-explicit-test-Tra5JK/remote.git
+ * [new branch]      feature/remote-check -> feature/remote-check
+stdout | src/server/bootstrap.smoke.test.ts
+[dotenv@17.3.1] injecting env (0) from .env.test -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+[dotenv@17.3.1] injecting env (0) from ../.env -- tip: 🛡️ auth for agents: https://vestauth.com
+
+ ❯ src/server/bootstrap.smoke.test.ts (24 tests | 2 failed) 22520ms
+   × shutdown closes Claude and its process despite a reject peer and stalled SDK handshake 626ms
+   × shutdown closes Claude and its process despite a stall peer and stalled SDK handshake 759ms
+Claude history main-thread work: {"blockingMs":2.4739999999997053,"filesystemRequests":8690,"yields":620,"longestCallbackMs":2.4739999999997053,"longestCallbackCpuMs":2.477,"longestGcMs":2.073791980743408,"gcCount":43,"longestGapMs":3.9112919999997757}
+To /private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/checkout-git-test-sVEzEz/remote.git
+ * [new branch]      main -> main
+Cloning into '/private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/checkout-git-test-sVEzEz/upstream-clone'...
+done.
+To /private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/checkout-git-test-sVEzEz/remote.git
+   2f9cd74..ff9d377  main -> main
+From /private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/checkout-git-test-sVEzEz/remote
+   2f9cd74..ff9d377  main       -> origin/main
+To /private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/checkout-git-test-zrRcjF/remote.git
+ * [new branch]      main -> main
+Cloning into '/private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/checkout-git-test-zrRcjF/upstream-clone'...
+done.
+To /private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/checkout-git-test-zrRcjF/remote.git
+   1b48f3e..1d5041c  main -> main
+From /private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/checkout-git-test-zrRcjF/remote
+   1b48f3e..1d5041c  main       -> origin/main
+To /private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/checkout-git-test-ZV2XNi/remote.git
+ * [new branch]      main -> main
+Cloning into '/private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/checkout-git-test-ZV2XNi/upstream-clone'...
+done.
+To /private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/checkout-git-test-ZV2XNi/remote.git
+   daea569..96eed56  main -> main
+From /private/var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/checkout-git-test-ZV2XNi/remote
+   daea569..96eed56  main       -> origin/main
+npm error Lifecycle script `test:unit` failed with error:
+npm error code 130
+npm error path <checkout>/packages/server
+npm error workspace @getpaseo/server@0.15.2
+npm error location <checkout>/packages/server
+npm error command failed
+npm error command sh -c vitest run --fileParallelism --exclude "**/*.e2e.test.ts"
+npm error Lifecycle script `test` failed with error:
+npm error code 130
+npm error path <checkout>/packages/server
+npm error workspace @getpaseo/server@0.15.2
+npm error location <checkout>/packages/server
+npm error command failed
+npm error command sh -c npm run test:unit && npm run test:integration src/server/agent/agent-manager.test.ts -t 'preserves every fork snapshot' --bail=1

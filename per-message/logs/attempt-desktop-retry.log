@@ -1,0 +1,56 @@
+[metro] Skipping web setup: EXPO_NO_WEB_SETUP is enabled.
+[metro] Using src/app as the root directory for Expo Router.
+[metro] Waiting on http://localhost:62132
+[metro] Logs for your project will appear below.
+[metro] Web Bundled 1615ms packages/app/index.ts (5812 modules)
+[e2e] Metro warmed on port 62132
+
+Running 1 test using 1 worker
+
+(node:56344) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:56344) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[e2e] Worker 0 daemon started on port 62160, home: /var/folders/wr/hsv81hhs1ll71hbqr_tmllhc0000gn/T/paseo-e2e-worker-0-WVVSvd
+Electron startup {
+  ready: true,
+  windows: 0,
+  argv: [
+    '<checkout>/node_modules/electron/dist/Electron.app/Contents/MacOS/Electron',
+    '<checkout>/packages/desktop'
+  ]
+}
+Error: net::ERR_TIMED_OUT
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:143434)
+    at SimpleURLLoaderWrapper.emit (node:events:514:28)
+Waiting for the debugger to disconnect...
+[e2e] Worker 0 daemon stopped
+  ✘  1 [electron] › .tmp/fork-history-desktop/smoke.spec.ts:63:3 › Assistant fork menu › reads fork history before and after sending and opens its source after reload (31.6s)
+[e2e] Metro stopped
+
+
+  1) [electron] › .tmp/fork-history-desktop/smoke.spec.ts:63:3 › Assistant fork menu › reads fork history before and after sending and opens its source after reload 
+
+    TimeoutError: electronApplication.firstWindow: Timeout 30000ms exceeded while waiting for event "window"
+
+       at fixtures.ts:20
+
+      18 |     console.log("Electron startup", await app.evaluate(({app,BrowserWindow})=>({ready:app.isReady(), windows:BrowserWindow.getAllWindows().length, argv:process.argv})));
+      19 |     try {
+    > 20 |       const page = await app.firstWindow();
+         |                              ^
+      21 |       await page.setViewportSize({width:1280,height:720});
+      22 |       await use(page);
+      23 |     } finally { await app.close(); await rm(profile,{recursive:true,force:true}); }
+        at Object.page (<checkout>/.tmp/fork-history-desktop/fixtures.ts:20:30)
+
+    attachment #1: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../per-message-desktop-results/smoke-Assistant-fork-menu--767c0-ens-its-source-after-reload-electron/trace.zip
+    Usage:
+
+        npx playwright show-trace ../per-message-desktop-results/smoke-Assistant-fork-menu--767c0-ens-its-source-after-reload-electron/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [electron] › .tmp/fork-history-desktop/smoke.spec.ts:63:3 › Assistant fork menu › reads fork history before and after sending and opens its source after reload 

@@ -1,0 +1,13 @@
+
+> @getpaseo/app@0.15.2 test
+> vitest run src/attachments/workspace-attachment-utils.test.ts --bail=1
+
+
+ RUN  v4.1.7 <checkout>/packages/app
+
+
+ Test Files  1 passed (1)
+      Tests  4 passed (4)
+   Start at  13:38:03
+   Duration  106ms (transform 28ms, setup 25ms, import 12ms, tests 2ms, environment 0ms)
+

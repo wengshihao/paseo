@@ -1,0 +1,74 @@
+
+> @getpaseo/server@0.15.2 test:unit
+> vitest run --fileParallelism --exclude "**/*.e2e.test.ts" src/server/agent/activity-curator.test.ts --bail=1
+
+
+ RUN  v4.1.6 <checkout>/packages/server
+
+stdout | src/server/agent/activity-curator.test.ts
+[dotenv@17.3.1] injecting env (0) from .env.test -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+[dotenv@17.3.1] injecting env (0) from ../.env -- tip: ⚙️  override existing env vars with { override: true }
+
+ ❯ src/server/agent/activity-curator.test.ts (27 tests | 1 failed) 9ms
+   × preserves message roles for inline history without interpreting labels inside prose 3ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/server/agent/activity-curator.test.ts > preserves message roles for inline history without interpreting labels inside prose
+AssertionError: expected { type: 'text', …(4) } to match object { chatHistoryEntries: [ …(2) ] }
+(5 matching properties omitted from actual)
+
+- Expected
++ Received
+
+  {
+-   "chatHistoryEntries": [
+-     {
+-       "role": "user",
+-       "text": "Explain this code",
+-     },
+-     {
+-       "role": "assistant",
+-       "text": "## Explanation
++   "contextKind": "chat_history",
++   "mimeType": "text/plain",
++   "text": "<chat-history-summary>
++ Chat history from a previous Paseo agent.
++
++ [User] Explain this code
++ [Assistant] ## Explanation
+  [User] is a literal label.
+  ```ts
+  const answer = 42;
+- ```",
+-     },
+-   ],
++ ```
++ </chat-history-summary>",
++   "title": "Chat history",
++   "type": "text",
+  }
+
+ ❯ src/server/agent/activity-curator.test.ts:635:29
+    633|     row(2, { type: "assistant_message", text: "## Explanation\n[User] …
+    634|   ] });
+    635|   expect(result.attachment).toMatchObject({ chatHistoryEntries: [
+       |                             ^
+    636|     { role: "user", text: "Explain this code" },
+    637|     { role: "assistant", text: "## Explanation\n[User] is a literal la…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 26 passed (27)
+   Start at  13:32:06
+   Duration  192ms (transform 74ms, setup 18ms, import 99ms, tests 9ms, environment 0ms)
+
+npm error Lifecycle script `test:unit` failed with error:
+npm error code 1
+npm error path <checkout>/packages/server
+npm error workspace @getpaseo/server@0.15.2
+npm error location <checkout>/packages/server
+npm error command failed
+npm error command sh -c vitest run --fileParallelism --exclude "**/*.e2e.test.ts" src/server/agent/activity-curator.test.ts --bail=1

@@ -1,6 +1,6 @@
 # Forked chat history QA
 
-**Latest: [review follow-up and regression evidence](review/README.md).** The evidence below records the initial submission.
+**Latest: [inline conversation and verification](inline/README.md).** [Review fixes](review/README.md) are also retained. The evidence below records the initial submission.
 
 Source commit: `5d71206b7219c60bc6027d29912a3a52223969ca`. Base: `5abfdf7107b5dabb885964de97dde8b55050613d`.
 

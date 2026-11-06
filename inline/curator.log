@@ -1,0 +1,13 @@
+
+> @getpaseo/server@0.15.2 test:unit
+> vitest run --fileParallelism --exclude "**/*.e2e.test.ts" src/server/agent/activity-curator.test.ts --bail=1
+
+
+ RUN  v4.1.6 <checkout>/packages/server
+
+
+ Test Files  1 passed (1)
+      Tests  27 passed (27)
+   Start at  13:41:37
+   Duration  511ms (transform 220ms, setup 39ms, import 304ms, tests 8ms, environment 0ms)
+

@@ -1,0 +1,5 @@
+
+> paseo@0.15.2 format:files
+> oxfmt packages/app/src/composer/draft/history.tsx packages/app/src/composer/draft/workspace-tab.tsx packages/app/src/panels/agent-panel.tsx
+
+Finished in 26ms on 3 files using 18 threads.

@@ -1,0 +1,5 @@
+
+> paseo@0.15.2 format:files
+> oxfmt packages/app/e2e/browser/assistant-fork-menu.spec.ts packages/app/e2e/support/helpers/chat-history.ts packages/app/src/attachments/chat-history/index.tsx packages/app/src/attachments/types.ts packages/app/src/attachments/workspace-attachments-store.ts packages/app/src/components/rewind/composer-restore.tsx packages/app/src/composer/actions.ts packages/app/src/composer/attachments/submit.ts packages/app/src/composer/index.tsx packages/app/src/panels/agent-panel.tsx packages/app/src/stores/draft-store/state.test.ts packages/app/src/stores/draft-store/state.ts
+
+Finished in 32ms on 12 files using 18 threads.

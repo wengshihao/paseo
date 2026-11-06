@@ -1,0 +1,16 @@
+
+> @getpaseo/app@0.15.2 test
+> vitest run src/stores/draft-store/state.test.ts src/components/rewind/composer-restore.test.ts src/composer/actions.test.ts src/composer/draft/input-draft.live.test.tsx --bail=1
+
+
+ RUN  v4.1.7 <checkout>/work/paseo/packages/app
+
+(node:22355) [DEP0151] DeprecationWarning: Package <checkout>/work/paseo/node_modules/react-native-worklets/ has a "main" field set to "./lib/module/index", excluding the full filename and extension to the resolved file at "lib/module/index.js", imported from <checkout>/work/paseo/node_modules/react-native-reanimated/lib/module/initializers.js.
+ Automatic extension resolution of the "main" field is deprecated for ES modules.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+ Test Files  4 passed (4)
+      Tests  67 passed (67)
+   Start at  15:23:48
+   Duration  9.62s (transform 8.38s, setup 168ms, import 9.71s, tests 148ms, environment 277ms)
+

@@ -1,0 +1,44 @@
+
+ RUN  v4.1.7 <checkout>
+
+ ❯ packages/protocol/src/messages.attachments.test.ts (13 tests | 1 failed) 11ms
+     × preserves the source of a fork across message submission 3ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  packages/protocol/src/messages.attachments.test.ts > shared messages attachments > preserves the source of a fork across message submission
+AssertionError: expected [ { type: 'text', …(4) } ] to deeply equal [ { type: 'text', …(5) } ]
+
+- Expected
++ Received
+
+@@ -1,12 +1,7 @@
+  [
+    {
+-     "chatHistorySource": {
+-       "agentId": "source-agent",
+-       "serverId": "source-host",
+-       "title": "Original conversation",
+-     },
+      "contextKind": "chat_history",
+      "mimeType": "text/plain",
+      "text": "Earlier context",
+      "title": "Chat history",
+      "type": "text",
+
+ ❯ packages/protocol/src/messages.attachments.test.ts:292:32
+    290|       attachments: [attachment],
+    291|     });
+    292|     expect(parsed.attachments).toEqual([attachment]);
+       |                                ^
+    293|   });
+    294|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 6 passed (13)
+   Start at  11:38:40
+   Duration  396ms (transform 177ms, setup 0ms, import 310ms, tests 11ms, environment 0ms)
+

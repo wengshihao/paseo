@@ -1,0 +1,13 @@
+
+> @getpaseo/server@0.15.2 test:unit
+> vitest run --fileParallelism --exclude "**/*.e2e.test.ts" src/server/agent/agent-manager.test.ts -t fork history survives --bail=1
+
+
+ RUN  v4.1.6 <checkout>/packages/server
+
+
+ Test Files  1 passed (1)
+      Tests  2 passed | 236 skipped (238)
+   Start at  12:00:33
+   Duration  804ms (transform 480ms, setup 18ms, import 687ms, tests 29ms, environment 0ms)
+
